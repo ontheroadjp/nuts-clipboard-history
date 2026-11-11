@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.nuts-clipboard-history" path="/org/gnome/shell/extensions/nuts-clipboard-history/">
+    <key name="toggle-history" type="as">
+      <default>['&lt;Control&gt;&lt;Shift&gt;backslash']</default>
+      <summary>Toggle clipboard history</summary>
+    </key>
+  </schema>
+</schemalist>

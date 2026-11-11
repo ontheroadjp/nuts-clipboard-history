@@ -1,0 +1,8 @@
+{
+  "uuid": "nuts-clipboard-history@local",
+  "name": "Nuts Clipboard History",
+  "description": "Search and paste previously copied text",
+  "shell-version": ["50"],
+  "settings-schema": "org.gnome.shell.extensions.nuts-clipboard-history",
+  "version": 1
+}
