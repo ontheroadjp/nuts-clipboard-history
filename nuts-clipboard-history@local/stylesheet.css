@@ -1,0 +1,5 @@
+.nuts-history { background-color: rgba(30, 30, 36, 0.98); border: 1px solid #666; border-radius: 12px; padding: 16px; width: 600px; spacing: 8px; }
+.nuts-history-entry { padding: 10px; border-radius: 6px; background-color: #444; color: white; }
+.nuts-history-row { padding: 9px; border-radius: 5px; color: white; }
+.nuts-history-row:selected { background-color: #4b6b9c; }
+.nuts-history-empty { padding: 10px; color: #aaa; }

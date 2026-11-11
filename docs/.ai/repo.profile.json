@@ -7,7 +7,11 @@
     "docs/L2_development",
     "docs/L3_implementation"
   ],
-  "commands": {},
+  "commands": {
+    "test": "node tests/history.test.mjs",
+    "install": "./install.sh",
+    "uninstall": "./uninstall.sh"
+  },
   "primary_docs": {
     "investigation": "docs/L3_implementation/specification_summary.md",
     "structure": "docs/L1_project/repository_structure.md"

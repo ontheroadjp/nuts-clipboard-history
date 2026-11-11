@@ -1,3 +1,5 @@
 # 開発・運用
 
-README はインストール、起動、ビルド、テスト手順を未定としています（`README.md:7-14`）。実行定義や CI の追加後に手順を確認してください。未確認のコマンドを掲載しないのは、再現できない手順を避けるためです。
+`./install.sh` は GNOME Shell 50 を確認し、拡張への symlink を作りスキーマをコンパイルして有効化します（`install.sh:1-28`）。Shell が拡張を認識しない場合の手順と履歴削除方法は `README.md:12-26` にあります。`./uninstall.sh` はリンクを外しますが履歴を保持します（`uninstall.sh:1-12`）。
+
+履歴の単体テストは `node tests/history.test.mjs` で実行します（`package.json:1`）。GNOME 上での貼り付け動作は実機確認が必要です（`README.md:28`）。

@@ -1,8 +1,10 @@
 # リポジトリ構造
 
-- `README.md`: プロジェクト名と、未確定の機能・操作・方針を示します（`README.md:1-17`）。
-- `.gitignore`: インストール済み toolkit の `.codex` 配下を Git の追跡対象から除外します（`.gitignore:1-7`）。
-- `docs/`: この初期化で作成した設計・開発情報です（`docs/.ai/repo.profile.json`）。
-- `CLAUDE.md` と `AGENTS.md`: AI 向け運用情報です（`CLAUDE.md:1-4`, `AGENTS.md:1-4`）。両者は現時点で別ファイルです。
+- `nuts-clipboard-history@local/`: Shell 拡張、履歴処理、スタイル、設定スキーマ（`nuts-clipboard-history@local/metadata.json:1-8`, `nuts-clipboard-history@local/extension.js:1-18`）。
+- `install.sh`、`uninstall.sh`: 拡張の導入と削除（`install.sh:1-28`, `uninstall.sh:1-12`）。
+- `tests/`: 履歴と端末判定の Node.js テスト（`tests/history.test.mjs:1-14`）。
+- `docs/`: 設計・開発情報（`docs/.ai/repo.profile.json`）。
+- `README.md`: 利用手順と制限（`README.md:3-30`）。
+- `CLAUDE.md`、`AGENTS.md`: AI 向け運用情報。`AGENTS.md` は `CLAUDE.md` へのシンボリックリンク。
 
-アプリのモノレポ構成は確認できません。アプリ実装の追加後に構成を確認してください。
+モノレポ構成や CI 定義は確認できません。
