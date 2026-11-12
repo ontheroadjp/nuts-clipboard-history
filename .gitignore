@@ -5,6 +5,7 @@
 .codex/skills/
 .codex/templates/
 .codex/hooks.json
+CLAUDE.md
 
 # Compiled GNOME schemas
 nuts-clipboard-history@local/schemas/gschemas.compiled
