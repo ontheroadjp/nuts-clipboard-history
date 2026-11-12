@@ -89,6 +89,13 @@ export default class ClipboardHistory extends Extension {
 
     _buildUI() {
         this._box = new St.BoxLayout({style_class: 'nuts-history', vertical: true, reactive: true});
+        this._box.connect('captured-event', (actor, event) => {
+            if ((event.type() === Clutter.EventType.BUTTON_PRESS ||
+                event.type() === Clutter.EventType.TOUCH_BEGIN) &&
+                !actor.contains(global.stage.get_event_actor(event)))
+                this._hide();
+            return Clutter.EVENT_PROPAGATE;
+        });
         this._entry = new St.Entry({style_class: 'nuts-history-entry', hint_text: 'Search clipboard history…', can_focus: true});
         this._results = new St.BoxLayout({vertical: true});
         this._box.add_child(this._entry);
