@@ -6,7 +6,7 @@ Shell の clipboard selection 変更を監視し、テキストをユーザー�
 
 ### 選択と貼り付け
 
-設定スキーマの Ctrl+Shift+backslash で画面を開き、上下キーまたは Ctrl+J/K で移動して Enter で選択します（`nuts-clipboard-history@local/schemas/org.gnome.shell.extensions.nuts-clipboard-history.gschema.xml:1-9`, `nuts-clipboard-history@local/extension.js:105-181`）。元のウィンドウにフォーカスが戻ったとき、既知の端末では Ctrl+Shift+V、それ以外では Ctrl+V を送ります（`nuts-clipboard-history@local/extension.js:182-215`, `nuts-clipboard-history@local/history.js:23-33`）。
+設定スキーマの Ctrl+Shift+backslash で画面を開き、上下キーまたは Ctrl+J/K で移動して Enter で選択します。画面外のクリックまたはタッチで画面を閉じます（`nuts-clipboard-history@local/schemas/org.gnome.shell.extensions.nuts-clipboard-history.gschema.xml:1-9`, `nuts-clipboard-history@local/extension.js:90-194`）。元のウィンドウにフォーカスが戻ったとき、既知の端末では Ctrl+Shift+V、それ以外では Ctrl+V を送ります（`nuts-clipboard-history@local/extension.js:196-221`, `nuts-clipboard-history@local/history.js:23-33`）。
 
 ### インストールと検証
 
